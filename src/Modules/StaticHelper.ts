@@ -19,8 +19,5 @@ export default class StaticHelper implements IStaticHelper{
     static moneyMask(money:AlfaNumeric):string{
         return ""
     }
-    static maskParse(text:string, format:string):string{
-        return ""
-    }
 
 }

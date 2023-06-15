@@ -20,7 +20,5 @@ export default class NonStaticHelper extends StaticHelper implements INonStaticH
     money(money:AlfaNumeric):string{
         return StaticHelper.moneyMask(money)
     }
-    make(text:string, format:string):string{
-        return StaticHelper.maskParse(text, format)
-    }
+
 }

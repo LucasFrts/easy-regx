@@ -9,6 +9,5 @@ interface INonStaticHelpers{
     zipCode(text:string):string;
     phone(text:string):string;
     money(money:AlfaNumeric):string;
-    make(text:string, format:string):string;
 }
 export {IStaticHelper, INonStaticHelpers}
