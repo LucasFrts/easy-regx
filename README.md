@@ -1,2 +1,2 @@
 # easy-regx
-Simple js library to manipulate regex with simplicty
+Simple js library to manipulate regex with simplicity
