@@ -21,9 +21,14 @@ export default class Regx extends NonStaticHelper implements IRegx{
         return ""
     }
     onlyNumber(): string {
-        return ""
+        this.string = this.string.replace(this.regex.onlyNumber(), "");
+        return this.string;
     }
-    make(pattern:string):string{
+    reverse(): string{
+        this.string = this.string.split("").reverse().join("");
+        return this.string;
+    }
+    make(pattern:string): string{
         const splittedPatern = pattern.split('');
         const splittedString = this.string.split('');
         const jobArguments = splittedPatern.filter((k)=>k == '#')
@@ -43,8 +48,9 @@ export default class Regx extends NonStaticHelper implements IRegx{
                 count++;
             }
         }
-          
-        return response;
+        this.string = response;
+
+        return this.string;
     }
 
 }
